@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>很飘啊</title>
+</head>
+<style>
+body{
+	text-align: center;
+	background-color: #d5e7f9;
+}
+p{
+	font-size: 20px;
+	color: #6bd3d6;
+}
+</style>
+<body>
+<p>关雎</p>
+<p>关关雎鸠，在河之洲。窈窕淑女，君子好逑。</p>
+<p>参差荇菜，左右流之。窈窕淑女，寤寐求之。</p>
+<p>求之不得，寤寐思服。悠哉悠哉，辗转反侧。</p>
+<p>参差荇菜，左右采之。窈窕淑女，琴瑟友之。</p>
+<p>参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。</p>
+
+
+
+
+</body>
+
+
+<script src="<?=__PUBLIC__.'js/'?>jquery1.11.3.min.js"></script>
+<script src="<?=__PUBLIC__.'js/'?>qin.js"></script>
+
+<script>
+    $("p").qin({
+        offset:22, // default , 最大偏移量
+        duration:500, // default , 晃动时间
+        recline:0.2 // default , 每像素偏移量，越小“琴弦绷的越紧”
+    });
+</script>
+</html>
